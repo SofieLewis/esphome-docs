@@ -31,7 +31,7 @@ required to be set up in your configuration for this sensor to work.
           name: "BME280 Pressure"
         humidity:
           name: "BME280 Humidity"
-        address: 0x77
+        address: 0x76
         update_interval: 60s
 
 Configuration variables:
@@ -64,7 +64,7 @@ Configuration variables:
   - All other options from :ref:`Sensor <config-sensor>`.
 
 - **address** (*Optional*, int): Manually specify the I^2C address of
-  the sensor. Defaults to ``0x77``. Another address can be ``0x76``.
+  the sensor. Defaults to ``0x76``. Another address can be ``0x77``.
 - **iir_filter** (*Optional*): Set up an Infinite Impulse Response filter to increase accuracy. One of
   ``OFF``, ``2x``, ``4x``, ``16x``. Defaults to ``OFF``.
 - **update_interval** (*Optional*, :ref:`config-time`): The interval to check the
